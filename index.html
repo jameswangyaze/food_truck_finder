@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="css/style.css">
+	<script type="text/javascript" src="js/script.js"></script>
+	<title>Food Truck Finder</title>
+</head>
+<body>
+	<div class="container mt-4">
+		<h1 class="display-4 text-center">
+			<span class="text-primary">FoodTruck</span>Finder
+		</h1>
+		<h5 class="text-center">
+			Find the food trucks that <span class="text-primary">open</span> right now!
+		</h5>
+		<form id="truck-form">
+			<div class="form-group">
+				<label for="truck-name">Name</label>
+				<input type="text" id="truck-name" class="form-control">
+			</div>
+			<div class="form-group">
+				<label for="food-type">Food Type</label>
+				<input type="text" id="food-type" class="form-control">
+			</div>
+		</form>
+		<nav class="mt-5" aria-label="Page navigation">
+		  <ul id="nav-pagination" class="pagination">
+		  </ul>
+		</nav>
+		<table id="truck-table" class="table table-striped mt-5">
+			<thead>
+				<tr>
+					<th>Name</th>
+					<th>Location</th>
+					<th>Food Type</th>
+					<th>Open Hours</th>
+				</tr>
+			</thead>
+			<tbody id="truck-list"></tbody>
+		</table>
+	</div>
+</body>
+</html>
